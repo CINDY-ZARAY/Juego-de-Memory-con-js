@@ -342,12 +342,8 @@ button:focus {
 
 @media (max-width: 600px) {
   body {
-    flex-direction: column;
-  }
-
-  body {
     background-image: none;
-    background-color: #e6a688;
+    background-color: #05ebd7;
   }
 
   .cabecera {
@@ -375,7 +371,7 @@ button:focus {
     font-size: 1rem;
   }
   .bienvenida button {
-    min-width: 15rem;
+    min-width: 10rem;
     margin: 0.5rem;
   }
 
