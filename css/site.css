@@ -2,8 +2,8 @@
   --bg: #f7dde1;
   --font: "Archivo", sans-serif;
   --font-display: "Permanent Marker", cursive;
-  --hotpink: #e93301;
-  --orange: #00140a;
+  --hotpink: #f84818;
+  --orange: #f84818;
   --black: #0000;
   --gradient: linear-gradient(35deg, var(--orange), var(--hotpink));
 }
@@ -15,6 +15,5 @@
 body {
   margin: auto;
   min-height: 100vh;
-  background: var(--bg);
   font-family: var(--font);
 }

@@ -1,10 +1,18 @@
 body {
+  height: 100vh;
+  width: 70%;
   background-image: url("../img/coby.png");
-  background-attachment: fixed;
+  background-size: cover;
   background-size: 100% 100%;
+  object-fit: scale-down;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .bienvenida {
@@ -28,8 +36,9 @@ body {
 .bienvenida h1 {
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 2rem;
   margin-top: 0;
+  padding-bottom: 1rem;
 }
 
 .bienvenida-botones {
@@ -38,7 +47,7 @@ body {
 
 .bienvenida button {
   padding: 1rem 3rem;
-  margin: 0 1rem;
+  margin: 2rem;
   min-width: 20rem;
 }
 
@@ -48,20 +57,20 @@ h3 {
 }
 
 .cabecera {
-  padding: 0.3rem 2rem;
-  background: white;
+  padding: 2rem 1rem;
+  /*background: white;*/
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .cabecera-titulo {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 2;
   margin: 0;
   color: rgba(7, 7, 7, 7);
 }
@@ -70,7 +79,7 @@ h3 {
   font-family: var(--font-display);
   color: #f84818;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   line-height: 0.9;
 }
 
@@ -91,7 +100,7 @@ main {
 
 .mesa {
   display: flex;
-  padding-bottom: 11rem;
+  padding-top: 2rem;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
@@ -102,7 +111,8 @@ main {
 .tarjeta {
   width: 6rem;
   height: 6rem;
-  margin: 0.5rem;
+  margin: 0.2rem;
+  margin-top: 1rem;
   border-radius: 0.9em;
   background-image: var(--gradient);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.2);
@@ -239,7 +249,7 @@ button {
   background-image: var(--gradient);
   padding: 0.75rem 4rem;
   border-radius: 5rem;
-  color: rgb(250, 247, 245);
+  color: rgb(8, 8, 8);
   font-family: var(--font-display);
   font-weight: 600;
   text-transform: uppercase;
@@ -250,7 +260,7 @@ button {
 
 button:hover,
 button:focus {
-  opacity: 0.7;
+  opacity: 0.9;
   outline: 0;
 }
 
@@ -328,4 +338,65 @@ button:focus {
   font-size: 2rem;
   font-family: sans-serif;
   font-weight: 300;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  body {
+    background-image: none;
+    background-color: #e6a688;
+  }
+
+  .cabecera {
+    width: 100%;
+    justify-content: space-between;
+    background-color: #ffff;
+  }
+
+  .cabecera-titulo {
+    font-size: 12px;
+    line-height: 10px;
+    font-weight: 300;
+  }
+
+  .cabecera-num {
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  button {
+    background-image: none;
+    color: rgb(7, 7, 7);
+    width: 2rem;
+    min-width: 10rem;
+    font-size: 1rem;
+  }
+  .bienvenida button {
+    min-width: 15rem;
+    margin: 0.5rem;
+  }
+
+  .bienvenida h1 {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+
+  .control-nivel {
+    display: none;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .selecciona-nivel {
+    font-size: 0.5rem;
+  }
+  .tarjeta {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.4em;
+  }
 }
